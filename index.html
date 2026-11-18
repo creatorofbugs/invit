@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>25th Wedding Anniversary • Silver Jubilee | Santosh &amp; Govind</title>
+  <meta name="description" content="Luxury royal digital invitation celebrating the 25th Wedding Anniversary of Santosh and Govind (2001 - 2026).">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/silver-jubilee-crest.svg">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Top Device Mode Preview Bar (Allows viewing in desktop full screen OR iPhone simulated reel frame) -->
+  <header class="device-preview-bar">
+    <div class="badge">
+      <span class="badge-dot"></span>
+      <span>25th Silver Jubilee • Santosh &amp; Govind</span>
+    </div>
+    <div class="view-toggle-group">
+      <button class="view-toggle-btn active" id="btn-view-fullscreen" onclick="setViewMode('full')">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="3" width="20" height="14" rx="2"/>
+          <line x1="8" y1="21" x2="16" y2="21"/>
+          <line x1="12" y1="17" x2="12" y2="21"/>
+        </svg>
+        Full View
+      </button>
+      <button class="view-toggle-btn" id="btn-view-phone" onclick="setViewMode('phone')">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="5" y="2" width="14" height="20" rx="3"/>
+          <line x1="12" y1="18" x2="12" y2="18.01"/>
+        </svg>
+        Mobile Preview (Reel)
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="app-container" id="main-app">
+
+    <!-- ======================================================================
+         SECTION 1: HERO SKY & PALACE CINEMATIC DESCENT
+         ====================================================================== -->
+    <section class="hero-section" id="hero-section">
+      <!-- Interactive Sky Lanterns Canvas -->
+      <canvas id="lanterns-canvas"></canvas>
+
+      <!-- Hero Header (Drifting in the Twilight Sky with Lanterns) -->
+      <div class="hero-title-wrap" id="hero-title">
+        <div class="hero-milestone-tag">Maru Family Invites You • Celebrating 25 Years</div>
+        <h1 class="hero-title">Santosh &amp; Govind</h1>
+        <div class="hero-subtitle">Silver Jubilee</div>
+        <div class="hero-years">2001 – 2026</div>
+        <div class="click-hint">✨ Tap anywhere on the sky to release your own glowing lantern</div>
+      </div>
+
+      <!-- Palace Parallax Visual Container -->
+      <div class="palace-container" id="palace-container">
+        <img src="assets/images/palace-hero.svg" alt="Royal Heritage Indian Palace" class="palace-svg-img">
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <div class="scroll-prompt" id="scroll-prompt" onclick="scrollToCard()">
+        <span>Scroll Down</span>
+        <div class="mouse-scroll-icon">
+          <div class="mouse-wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 2: FORMAL INVITATION CARD (EMERALD GREEN PARCHMENT)
+         ====================================================================== -->
+    <section class="card-section" id="invite-card-section">
+      <div class="formal-card" id="formal-card">
+        <div class="card-border-inner"></div>
+
+        <!-- Auspicious Ganesha Emblem -->
+        <div class="ganesha-crest-wrap ganesha-glow">
+          <img src="assets/images/ganesha-crest.svg" alt="Lord Ganesha Emblem" class="ganesha-svg">
+        </div>
+
+        <div class="blessing-intro">॥ श्री गणेशाय नमः ॥</div>
+        <div class="family-hosts">Maru Family is inviting you to celebrate the auspicious event</div>
+
+        <div class="invite-badge">25th ANNIVERSARY</div>
+
+        <p class="invite-text">
+          Join in the joyous Silver Jubilee celebrations of
+        </p>
+
+        <h2 class="couple-names-gold">Santosh &amp; Govind</h2>
+        <div class="silver-milestone-text">25 Glorious Years of Togetherness • 2001 – 2026</div>
+
+        <!-- Celebration Date Pill Badge -->
+        <div class="celebration-date-highlight">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+          <span>28 & 29 November 2026</span>
+        </div>
+
+        <!-- Silver Jubilee Wreath & Crest (2001 - 2026) -->
+        <div style="width: 140px; margin: 0 auto;">
+          <img src="assets/images/silver-jubilee-crest.svg" alt="Silver Jubilee 25 Years Crest (2001 - 2026)" style="width:100%; height:auto;">
+        </div>
+      </div>
+
+      <!-- ======================================================================
+           VENUE SHOWCASE & GOOGLE MAPS LINK SECTION
+           ====================================================================== -->
+      <div class="venue-section royal-reveal">
+
+        <!-- 1. SECTION ABOVE: NAMES THE VENUE -->
+        <div class="venue-name-card">
+          <div class="venue-tag-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Celebration Venue</span>
+          </div>
+
+          <!-- Venue Name -->
+          <h3 class="venue-main-name">Maheshwari Bhavan</h3>
+
+          <!-- Venue Address / City -->
+          <p class="venue-address-text">
+            Maheshwari Bhavan
+          </p>
+
+          <!-- Date & Time -->
+          <div class="venue-time-badge">
+            28 & 29 November 2026
+          </div>
+        </div>
+
+        <!-- 2. SECTION BELOW: LINK TO THE VENUE (GOOGLE MAPS) -->
+        <div class="venue-map-link-card">
+          <a href="https://share.google/vR9MD5fZNMekgw9ow" target="_blank" rel="noopener" class="venue-google-map-btn" id="venue-google-maps-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            </svg>
+            <span>Open in Google Maps</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M7 17L17 7M17 7H7M17 7V17"/>
+            </svg>
+          </a>
+          <span class="venue-map-hint">Click above to get instant GPS directions to Maheshwari Bhavan</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         VINTAGE CAR TRANSITION 1 (BETWEEN VENUE & THEMES)
+         ====================================================================== -->
+    <div class="vintage-car-transition royal-reveal">
+      <div class="car-heading">EVENT THEMES &amp; ATTIRE</div>
+      <div class="car-img-wrap car-idle">
+        <img src="assets/images/vintage-car.svg" alt="Vintage Royal Classic Car" class="car-img">
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         SECTION: CELEBRATION THEMES & ATTIRE DRESS CODE
+         ====================================================================== -->
+    <section class="themes-section" id="themes-section">
+      <div class="themes-container royal-reveal">
+        <div class="section-label">CELEBRATION DRESS CODE</div>
+        <h3 class="section-title">Event Themes &amp; Attire</h3>
+        <p class="story-intro-text" style="color: #cbd5e1; margin-bottom: 25px;">
+          We invite our beloved guests to dress to celebrate with us across our Silver Jubilee festivities:
+        </p>
+
+        <div class="themes-grid">
+          <!-- Event 1: 28th Evening - DJ Night -->
+          <article class="theme-card royal-reveal delay-1">
+            <div class="theme-card-top">
+              <div class="theme-date-time">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span>28th November • Evening 7:00 PM</span>
+              </div>
+              <span class="theme-event-badge">Day 01 • Evening</span>
+            </div>
+
+            <h4 class="theme-event-name">
+              <span class="theme-event-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 18V5l12-2v13"/>
+                  <circle cx="6" cy="18" r="3"/>
+                  <circle cx="18" cy="16" r="3"/>
+                </svg>
+              </span>
+              DJ Night
+            </h4>
+
+            <div class="theme-pill-block">
+              <span class="theme-pill">Theme: Western / Indo-Western</span>
+            </div>
+
+            <p class="theme-desc">
+              Glamorous evening silhouettes, chic cocktail wear, stylish Indo-western gowns, blazers &amp; contemporary bandhgalas.
+            </p>
+
+            <div class="theme-palette">
+              <span>Palette:</span>
+              <div class="palette-dots">
+                <span class="p-dot dot-navy" title="Midnight Navy"></span>
+                <span class="p-dot dot-champagne" title="Champagne"></span>
+                <span class="p-dot dot-gold" title="Sparkling Gold"></span>
+                <span class="p-dot dot-black" title="Classic Noir"></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 2: 29th Morning - Carnival -->
+          <article class="theme-card royal-reveal delay-2">
+            <div class="theme-card-top">
+              <div class="theme-date-time">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span>29th November • Morning 11:00 AM</span>
+              </div>
+              <span class="theme-event-badge">Day 02 • Morning</span>
+            </div>
+
+            <h4 class="theme-event-name">
+              <span class="theme-event-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </span>
+              The Carnival
+            </h4>
+
+            <div class="theme-pill-block">
+              <span class="theme-pill">Theme: Glamorous Tones of Pastels &amp; Prints</span>
+            </div>
+
+            <p class="theme-desc">
+              Breezy daytime festival elegance, radiant pastel tones, playful floral prints, flowy coords, and light festive chic.
+            </p>
+
+            <div class="theme-palette">
+              <span>Palette:</span>
+              <div class="palette-dots">
+                <span class="p-dot dot-pastel-pink" title="Blush Rose"></span>
+                <span class="p-dot dot-pastel-mint" title="Mint Frost"></span>
+                <span class="p-dot dot-pastel-peach" title="Soft Peach"></span>
+                <span class="p-dot dot-pastel-lavender" title="Powder Lilac"></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 3: 29th Evening - Baraat & Evening Reception -->
+          <article class="theme-card royal-reveal delay-3">
+            <div class="theme-card-top">
+              <div class="theme-date-time">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span>29th November • Evening 5:00 PM</span>
+              </div>
+              <span class="theme-event-badge">Day 02 • Grand Finale</span>
+            </div>
+
+            <h4 class="theme-event-name">
+              <span class="theme-event-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2l3 6 7 .5-5.5 5 1.5 7-6-3.5-6 3.5 1.5-7-5.5-5 7-.5z"/>
+                </svg>
+              </span>
+              Baraat &amp; Evening Reception
+            </h4>
+
+            <div class="theme-pill-block">
+              <span class="theme-pill">Theme: Royally Traditional</span>
+            </div>
+
+            <p class="theme-desc">
+              Opulent heritage splendor — royal Indian silks, ornate embroidered sherwanis, safas/turbans, regal lehangas, zari work &amp; ancestral jewels.
+            </p>
+
+            <div class="theme-palette">
+              <span>Palette:</span>
+              <div class="palette-dots">
+                <span class="p-dot dot-royal-emerald" title="Imperial Emerald"></span>
+                <span class="p-dot dot-royal-crimson" title="Heritage Crimson"></span>
+                <span class="p-dot dot-royal-gold" title="Rajput Gold"></span>
+                <span class="p-dot dot-royal-silk" title="Ivory Raw Silk"></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         VINTAGE CAR TRANSITION 2 (BETWEEN THEMES & STORY)
+         ====================================================================== -->
+    <div class="vintage-car-transition royal-reveal">
+      <div class="car-heading">JOURNEY OF 25 YEARS</div>
+      <div class="car-img-wrap car-idle">
+        <img src="assets/images/vintage-car.svg" alt="Vintage Royal Classic Car" class="car-img">
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         SECTION 3: MEET THE COUPLE (DUSTY ROSE PARCHMENT)
+         ====================================================================== -->
+    <section class="rose-section" id="story-section">
+      <div class="story-container royal-reveal">
+        <div class="section-label">A QUARTER CENTURY OF TOGETHERNESS</div>
+        <h3 class="section-title">Santosh &amp; Govind</h3>
+
+        <p class="story-intro-text">
+          Twenty-five years ago in 2001, we embarked on this beautiful journey of companionship, trust, and shared dreams. Every milestone of these 25 years has been enriched by the warmth, affection, and presence of our family and dear friends. We look forward with joy to celebrating this Silver Jubilee milestone with you on 29 November 2026!
+        </p>
+
+        <!-- Ornate Carved Ivory Mirror Frame with Couple Portrait -->
+        <div class="mirror-frame-wrap float-anim">
+          <img src="assets/images/couple-portrait.jpeg?v=1" alt="Santosh &amp; Govind" id="couple-portrait-img" class="couple-portrait-img">
+          <img src="assets/images/mirror-frame.svg?v=1" alt="Carved Mirror Frame" class="mirror-svg-frame">
+        </div>
+
+        <button class="photo-toggle-btn" id="photo-toggle-btn" onclick="toggleCouplePhoto()">
+          <span>Toggle Photo • 2001 vs 2026</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         VINTAGE CAR TRANSITION 3 (BETWEEN STORY & THINGS TO KNOW)
+         ====================================================================== -->
+    <div class="vintage-car-transition royal-reveal">
+      <div class="car-heading">GUEST GUIDE</div>
+      <div class="car-img-wrap car-idle">
+        <img src="assets/images/vintage-car.svg" alt="Vintage Royal Classic Car" class="car-img">
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         SECTION 4: THINGS TO KNOW (ANTIQUE OCHRE / GOLD PARCHMENT)
+         ====================================================================== -->
+    <section class="ochre-section" id="guest-guide-section">
+      <div class="story-container royal-reveal">
+        <div class="section-label">HELPFUL INFORMATION</div>
+        <h3 class="section-title">Things to Know</h3>
+
+        <p class="story-intro-text">
+          A few helpful details for our guests attending the celebration:
+        </p>
+
+        <div class="guest-info-grid">
+          <!-- Item 1: Celebration Hashtag -->
+          <div class="info-item royal-reveal delay-1">
+            <div class="info-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                <circle cx="12" cy="13" r="4"/>
+              </svg>
+            </div>
+            <div class="info-item-title">CELEBRATION HASHTAG</div>
+            <p class="info-item-desc">When capturing and sharing photos, please tag our official celebration hashtag:</p>
+            <div class="hashtag-badge" id="copy-hashtag-btn">
+              <span id="anniversary-hashtag">#SantoshGovind2026</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Item 2: Weather -->
+          <div class="info-item royal-reveal delay-2">
+            <div class="info-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/>
+                <line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+              </svg>
+            </div>
+            <div class="info-item-title">NOVEMBER WEATHER</div>
+            <p class="info-item-desc">Late November brings pleasant, cool, and crisp evenings (around 18°C - 22°C). Light shawls or evening wraps are suggested for outdoor celebrations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         VINTAGE CAR TRANSITION 4 (BETWEEN OCHRE & NIGHT COUNTDOWN)
+         ====================================================================== -->
+    <div class="vintage-car-transition royal-reveal">
+      <div class="car-heading">COUNTDOWN TO 29 NOVEMBER 2026</div>
+      <div class="car-img-wrap car-idle">
+        <img src="assets/images/vintage-car.svg" alt="Vintage Royal Classic Car" class="car-img">
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         SECTION 5: THE COUNTDOWN & GRAND FINALE (MIDNIGHT PALACE PANORAMA)
+         ====================================================================== -->
+    <section class="countdown-section" id="countdown-section">
+      <div class="section-label">JOIN US SOON</div>
+      <h3 class="section-title">The Countdown Begins</h3>
+      <p style="color: var(--silver-primary); font-size: 0.95rem; margin-top: 6px;">
+        Counting Down to 29 November 2026
+      </p>
+
+      <!-- Live Countdown Digits (Ticking to 29 November 2026) -->
+      <div class="countdown-digits-wrap royal-reveal">
+        <div class="count-box">
+          <div class="count-num" id="count-days">00</div>
+          <div class="count-label">Days</div>
+        </div>
+        <div class="count-box">
+          <div class="count-num" id="count-hours">00</div>
+          <div class="count-label">Hours</div>
+        </div>
+        <div class="count-box">
+          <div class="count-num" id="count-minutes">00</div>
+          <div class="count-label">Minutes</div>
+        </div>
+        <div class="count-box">
+          <div class="count-num" id="count-seconds">00</div>
+          <div class="count-label">Seconds</div>
+        </div>
+      </div>
+
+      <!-- Palace Night Panorama Illustration -->
+      <div class="palace-night-wrap royal-reveal delay-1">
+        <img src="assets/images/palace-night.svg" alt="Illuminated Palace at Night with Floating Lanterns" class="palace-night-img">
+      </div>
+
+      <!-- Traditional Family Blessing Footer -->
+      <footer class="site-footer">
+        <div style="font-family: var(--font-serif-royal); font-size: 1.15rem; color: var(--gold-light); margin-bottom: 8px;">
+          ॥ सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः ॥
+        </div>
+        <p style="font-style: italic; color: #cbd5e1; max-width: 500px; margin: 0 auto 15px;">
+          "May all beings be happy, healthy, and blessed. We eagerly look forward to celebrating 25 years of love and togetherness with you."
+        </p>
+        <p style="color: var(--gold-primary); font-weight: 700; letter-spacing: 2px;">
+          WITH LOVE &amp; BLESSINGS • MARU FAMILY • 2001 – 2026
+        </p>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       FLOATING ROYAL MUSIC PLAYER BUTTON (BOTTOM-RIGHT)
+       ====================================================================== -->
+  <button class="floating-music-btn" id="music-toggle-btn" title="Toggle Background Royal Music">
+    <div class="sound-waves-wrap" id="sound-waves">
+      <div class="wave-ring"></div>
+      <div class="wave-ring"></div>
+    </div>
+    <div id="music-icon">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+        <polygon points="6,4 20,12 6,20"/>
+      </svg>
+    </div>
+  </button>
+  <audio id="bg-music-audio" loop preload="none"></audio>
+
+  <!-- Scripts -->
+  <script src="js/lanterns.js"></script>
+  <script src="js/palace-scroll.js"></script>
+  <script src="js/audio-player.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
