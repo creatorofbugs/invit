@@ -1,0 +1,1135 @@
+/* ==========================================================================
+   ROYAL 25TH ANNIVERSARY WEDDING CELEBRATION INVITATION
+   SANTOSH & GOVIND • 2001 - 2026 • 28 NOVEMBER 2026
+   Inspired by Luxury Indian Heritage Palaces
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Cinzel+Decorative:wght@700;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Color Palette */
+  --sky-dark: #050d18;
+  --sky-midnight: #0c1b30;
+  --sky-twilight: #162f52;
+
+  --emerald-deep: #0a2922;
+  --emerald-rich: #0e3b31;
+  --emerald-light: #165345;
+
+  --rose-deep: #61243b;
+  --rose-rich: #7e3350;
+  --rose-dusty: #9e4668;
+  --rose-paper: #faebf1;
+
+  --ochre-deep: #8c5d14;
+  --ochre-rich: #b88224;
+  --ochre-gold: #d8a33c;
+  --ochre-paper: #fbf4df;
+
+  --gold-light: #fff5d7;
+  --gold-primary: #dfb15b;
+  --gold-dark: #a17622;
+  --gold-foil: linear-gradient(135deg, #fff7df 0%, #e2b960 45%, #be8e2a 80%, #fff7df 100%);
+
+  --silver-light: #ffffff;
+  --silver-primary: #cbd5e1;
+  --silver-dark: #94a3b8;
+  --silver-foil: linear-gradient(135deg, #ffffff 0%, #e2e8f0 35%, #94a3b8 70%, #f8fafc 100%);
+
+  --sandstone-light: #ffe0b3;
+  --sandstone-main: #df974e;
+  --sandstone-dark: #93531b;
+
+  --pool-turquoise: #0891b2;
+  --pool-shimmer: #38bdf8;
+
+  /* Typography */
+  --font-serif-royal: 'Cinzel', 'Playfair Display', serif;
+  --font-serif-body: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Montserrat', -apple-system, sans-serif;
+  --font-decorative: 'Cinzel Decorative', cursive;
+
+  /* Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--sky-dark);
+  color: #ffffff;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--sky-dark);
+  overflow-x: hidden;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Device Mode Switcher Bar on Top (Desktop helper) */
+.device-preview-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(12, 27, 48, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(223, 177, 91, 0.3);
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  font-size: 0.82rem;
+  color: var(--gold-light);
+}
+
+.device-preview-bar .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.device-preview-bar .badge-dot {
+  width: 8px;
+  height: 8px;
+  background: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #10b981;
+}
+
+.view-toggle-group {
+  display: flex;
+  gap: 8px;
+}
+
+.view-toggle-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(223, 177, 91, 0.4);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.view-toggle-btn.active, .view-toggle-btn:hover {
+  background: var(--gold-primary);
+  color: #0c1b30;
+  border-color: var(--gold-primary);
+  font-weight: 600;
+}
+
+/* Main App Wrapper */
+.app-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  transition: max-width 0.5s ease;
+}
+
+/* Phone Frame mode for desktop view matching the reel video */
+body.phone-view-active .app-container {
+  max-width: 440px;
+  margin: 50px auto 30px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8), 0 0 0 12px #1e293b, 0 0 0 14px rgba(223, 177, 91, 0.5);
+  border-radius: 46px;
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   SECTION 1: HERO SKY & PALACE DESCENT
+   ========================================================================== */
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 175vh;
+  background: radial-gradient(circle at 50% 20%, #162f52 0%, #0c1b30 45%, #050d18 100%);
+  overflow: hidden;
+}
+
+/* Canvas for interactive floating sky lanterns */
+#lanterns-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/* Hero Title Header (Floating in the Sky with Lanterns) */
+.hero-title-wrap {
+  position: absolute;
+  top: 14vh;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 20;
+  padding: 0 20px;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hero-milestone-tag {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+  background: rgba(12, 27, 48, 0.65);
+  backdrop-filter: blur(8px);
+  padding: 6px 18px;
+  border-radius: 30px;
+  border: 1px solid rgba(223, 177, 91, 0.4);
+  margin-bottom: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.hero-title {
+  font-family: var(--font-serif-royal);
+  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  font-weight: 800;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1.15;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7), 0 0 35px rgba(223, 177, 91, 0.45);
+  margin-bottom: 8px;
+}
+
+.hero-subtitle {
+  font-family: var(--font-serif-royal);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero-years {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: var(--silver-primary);
+  margin-top: 6px;
+  opacity: 0.9;
+}
+
+.click-hint {
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  color: var(--gold-light);
+  opacity: 0.75;
+  margin-top: 15px;
+  animation: pulseHint 2.5s infinite;
+}
+
+@keyframes pulseHint {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.9; }
+}
+
+/* Palace Vector Illustration Container */
+.palace-container {
+  position: absolute;
+  top: 36vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 960px;
+  z-index: 15;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.palace-svg-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.7));
+}
+
+/* Scroll Down Indicator */
+.scroll-prompt {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 25;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--gold-light);
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: opacity 0.4s ease;
+  cursor: pointer;
+}
+
+.mouse-scroll-icon {
+  width: 22px;
+  height: 36px;
+  border: 1.5px solid var(--gold-primary);
+  border-radius: 12px;
+  position: relative;
+}
+
+.mouse-wheel {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 7px;
+  background: var(--gold-primary);
+  border-radius: 2px;
+  animation: scrollWheel 1.8s infinite;
+}
+
+@keyframes scrollWheel {
+  0% { transform: translate(-50%, 0); opacity: 1; }
+  100% { transform: translate(-50%, 12px); opacity: 0; }
+}
+
+/* ==========================================================================
+   SECTION 2: FORMAL INVITATION CARD (EMERALD PARCHMENT)
+   ========================================================================== */
+.card-section {
+  position: relative;
+  width: 100%;
+  background: 
+    radial-gradient(circle at 50% 10%, rgba(22, 83, 69, 0.8) 0%, rgba(10, 41, 34, 0.98) 60%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+  padding: 80px 24px 70px;
+  z-index: 30;
+  box-shadow: 0 -30px 60px rgba(0, 0, 0, 0.6);
+  border-top: 1px solid rgba(223, 177, 91, 0.3);
+}
+
+.formal-card {
+  max-width: 650px;
+  margin: 0 auto;
+  background: rgba(9, 34, 28, 0.85);
+  border: 1px solid rgba(223, 177, 91, 0.45);
+  border-radius: 16px;
+  padding: 50px 36px 45px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 0 40px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.card-border-inner {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  border: 1px solid rgba(223, 177, 91, 0.3);
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.ganesha-crest-wrap {
+  width: 80px;
+  height: 96px;
+  margin: 0 auto 16px;
+}
+
+.ganesha-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.blessing-intro {
+  font-family: var(--font-serif-body);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--gold-light);
+  opacity: 0.9;
+  margin-bottom: 6px;
+}
+
+.family-hosts {
+  font-family: var(--font-serif-royal);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.invite-badge {
+  display: inline-block;
+  font-family: var(--font-serif-royal);
+  font-size: 1.7rem;
+  font-weight: 900;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.invite-badge::before, .invite-badge::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 35px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-primary));
+}
+
+.invite-badge::before { right: calc(100% + 15px); }
+.invite-badge::after { left: calc(100% + 15px); transform: rotate(180deg); }
+
+.invite-text {
+  font-family: var(--font-serif-body);
+  font-size: 1rem;
+  color: #e2e8f0;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.couple-names-gold {
+  font-family: var(--font-serif-royal);
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  background: var(--gold-foil);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10px 0 6px;
+  line-height: 1.2;
+}
+
+.silver-milestone-text {
+  font-family: var(--font-serif-royal);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: var(--silver-primary);
+  margin-bottom: 25px;
+}
+
+.celebration-date-highlight {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(223, 177, 91, 0.12);
+  border: 1px solid var(--gold-primary);
+  padding: 10px 22px;
+  border-radius: 30px;
+  color: var(--gold-light);
+  font-family: var(--font-serif-royal);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   EXCLUSIVE VENUE SHOWCASE & GOOGLE MAPS LINK SECTION
+   ========================================================================== */
+.venue-section {
+  position: relative;
+  max-width: 650px;
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+/* 1. SECTION ABOVE THAT NAMES THE VENUE */
+.venue-name-card {
+  background: rgba(12, 43, 36, 0.9);
+  border: 1px solid rgba(223, 177, 91, 0.5);
+  border-radius: 16px;
+  padding: 36px 28px 30px;
+  position: relative;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.venue-tag-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(223, 177, 91, 0.35);
+  margin-bottom: 14px;
+}
+
+.venue-main-name {
+  font-family: var(--font-serif-royal);
+  font-size: clamp(1.6rem, 3.8vw, 2.4rem);
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 8px;
+  line-height: 1.25;
+}
+
+.venue-address-text {
+  font-family: var(--font-serif-body);
+  font-size: 1rem;
+  color: var(--gold-light);
+  opacity: 0.95;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.venue-time-badge {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+/* 2. SECTION BELOW GIVING THE GOOGLE MAP LINK */
+.venue-map-link-card {
+  margin-top: 18px;
+  background: rgba(6, 26, 21, 0.85);
+  border: 1px dashed rgba(223, 177, 91, 0.45);
+  border-radius: 14px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.venue-google-map-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #dfb15b 0%, #b88224 100%);
+  color: #0c1b30;
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border-radius: 40px;
+  box-shadow: 0 8px 25px rgba(223, 177, 91, 0.4);
+  transition: var(--transition-smooth);
+  width: 100%;
+  max-width: 380px;
+}
+
+.venue-google-map-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(223, 177, 91, 0.6);
+  background: linear-gradient(135deg, #fff2cc 0%, #dfb15b 100%);
+}
+
+.venue-google-map-btn svg {
+  flex-shrink: 0;
+}
+
+.venue-map-hint {
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  opacity: 0.85;
+  letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   EVENT THEMES & DRESS CODE SECTION
+   ========================================================================== */
+.themes-section {
+  position: relative;
+  width: 100%;
+  background: 
+    radial-gradient(circle at 50% 15%, rgba(18, 44, 66, 0.92) 0%, rgba(8, 20, 32, 0.98) 60%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+  padding: 80px 24px 90px;
+  z-index: 30;
+  box-shadow: 0 -30px 60px rgba(0, 0, 0, 0.6);
+  border-top: 1px solid rgba(223, 177, 91, 0.35);
+}
+
+.themes-container {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.themes-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.theme-card {
+  background: rgba(12, 30, 48, 0.8);
+  border: 1px solid rgba(223, 177, 91, 0.45);
+  border-radius: 18px;
+  padding: 28px 24px;
+  position: relative;
+  text-align: left;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+  transition: var(--transition-smooth);
+}
+
+.theme-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold-primary);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6), 0 0 20px rgba(223, 177, 91, 0.2);
+}
+
+.theme-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.theme-date-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+  background: rgba(223, 177, 91, 0.12);
+  border: 1px solid rgba(223, 177, 91, 0.35);
+  padding: 5px 14px;
+  border-radius: 20px;
+}
+
+.theme-event-badge {
+  font-family: var(--font-serif-royal);
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--silver-primary);
+}
+
+.theme-event-name {
+  font-family: var(--font-serif-royal);
+  font-size: clamp(1.4rem, 3.2vw, 1.85rem);
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-event-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(223, 177, 91, 0.2);
+  border: 1px solid var(--gold-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-light);
+  flex-shrink: 0;
+}
+
+.theme-pill-block {
+  margin-bottom: 12px;
+}
+
+.theme-pill {
+  display: inline-block;
+  font-family: var(--font-serif-royal);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  background: linear-gradient(135deg, rgba(223, 177, 91, 0.25) 0%, rgba(184, 130, 36, 0.2) 100%);
+  border-left: 3px solid var(--gold-primary);
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.theme-desc {
+  font-family: var(--font-serif-body);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #d1dbe5;
+  margin-bottom: 14px;
+}
+
+.theme-palette {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  opacity: 0.9;
+}
+
+.palette-dots {
+  display: flex;
+  gap: 6px;
+  margin-left: 4px;
+}
+
+.p-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Specific theme color dots */
+.dot-navy { background: #1e3a5f; }
+.dot-champagne { background: #f5e6c8; }
+.dot-gold { background: #dfb15b; }
+.dot-black { background: #18181b; }
+
+.dot-pastel-pink { background: #fbcfe8; }
+.dot-pastel-mint { background: #a7f3d0; }
+.dot-pastel-peach { background: #fed7aa; }
+.dot-pastel-lavender { background: #e9d5ff; }
+
+.dot-royal-emerald { background: #065f46; }
+.dot-royal-crimson { background: #991b1b; }
+.dot-royal-gold { background: #d97706; }
+.dot-royal-silk { background: #fef3c7; }
+
+/* ==========================================================================
+   VINTAGE CAR TRANSITION ELEMENT
+   ========================================================================== */
+.vintage-car-transition {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin: 45px auto;
+  text-align: center;
+  z-index: 40;
+}
+
+.car-heading {
+  font-family: var(--font-serif-royal);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 15px;
+}
+
+.car-img-wrap {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.car-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.2s ease-out;
+}
+
+/* ==========================================================================
+   SECTION 3: MEET THE COUPLE (DUSTY ROSE PARCHMENT)
+   ========================================================================== */
+.rose-section {
+  position: relative;
+  width: 100%;
+  background: 
+    radial-gradient(circle at 50% 10%, rgba(158, 70, 104, 0.85) 0%, rgba(97, 36, 59, 0.98) 60%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+  padding: 80px 24px 85px;
+  z-index: 30;
+  box-shadow: 0 -30px 60px rgba(0, 0, 0, 0.6);
+  border-top: 1px solid rgba(223, 177, 91, 0.3);
+}
+
+.story-container {
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-label {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-family: var(--font-serif-royal);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
+.story-intro-text {
+  font-family: var(--font-serif-body);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #fff1f5;
+  margin: 20px 0 35px;
+}
+
+/* Royal Carved Mirror Frame for Couple Portrait */
+.mirror-frame-wrap {
+  position: relative;
+  width: 310px;
+  height: 410px;
+  margin: 0 auto 25px;
+}
+
+.mirror-svg-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.couple-portrait-img {
+  display: block;
+  position: absolute;
+  top: 17%;
+  left: 27%;
+  width: 46%;
+  height: 68%;
+  z-index: 1;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 65px 65px 4px 4px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.photo-toggle-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(223, 177, 91, 0.5);
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 24px;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.photo-toggle-btn:hover {
+  background: var(--gold-primary);
+  color: #0c1b30;
+}
+
+/* ==========================================================================
+   SECTION 4: THINGS TO KNOW (ANTIQUE OCHRE / GOLD PARCHMENT)
+   ========================================================================== */
+.ochre-section {
+  position: relative;
+  width: 100%;
+  background: 
+    radial-gradient(circle at 50% 10%, rgba(216, 163, 60, 0.9) 0%, rgba(140, 93, 20, 0.98) 60%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+  padding: 70px 24px 80px;
+  z-index: 30;
+  box-shadow: 0 -30px 60px rgba(0, 0, 0, 0.6);
+  border-top: 1px solid rgba(223, 177, 91, 0.4);
+}
+
+.guest-info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 480px;
+  margin: 35px auto 0;
+}
+
+.info-item {
+  text-align: center;
+  background: rgba(43, 25, 4, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 24px 18px;
+  backdrop-filter: blur(5px);
+}
+
+.info-icon-wrap {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-light);
+}
+
+.info-item-title {
+  font-family: var(--font-serif-royal);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.info-item-desc {
+  font-size: 0.9rem;
+  color: #fff9ea;
+  line-height: 1.6;
+}
+
+.hashtag-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px dashed var(--gold-light);
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: var(--gold-light);
+  transition: var(--transition-smooth);
+}
+
+.hashtag-badge:hover {
+  background: #ffffff;
+  color: #0c1b30;
+}
+
+/* ==========================================================================
+   SECTION 5: THE COUNTDOWN & GRAND FINALE (MIDNIGHT PALACE PANORAMA)
+   ========================================================================== */
+.countdown-section {
+  position: relative;
+  width: 100%;
+  background: radial-gradient(circle at 50% 30%, #0d1e38 0%, #050b14 70%);
+  padding: 80px 24px 70px;
+  z-index: 30;
+  text-align: center;
+  overflow: hidden;
+  border-top: 1px solid rgba(223, 177, 91, 0.3);
+}
+
+.countdown-digits-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  max-width: 480px;
+  margin: 35px auto 45px;
+}
+
+.count-box {
+  flex: 1;
+  background: rgba(12, 27, 48, 0.85);
+  border: 1px solid rgba(223, 177, 91, 0.5);
+  border-radius: 12px;
+  padding: 16px 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.count-num {
+  font-family: var(--font-serif-royal);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: var(--gold-light);
+  line-height: 1;
+}
+
+.count-label {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--silver-primary);
+  margin-top: 6px;
+}
+
+/* Palace Night Panorama Visual */
+.palace-night-wrap {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.palace-night-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer note */
+.site-footer {
+  margin-top: 40px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   FLOATING ROYAL MUSIC PLAYER BUTTON (BOTTOM-RIGHT)
+   ========================================================================== */
+.floating-music-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+  transition: var(--transition-smooth);
+}
+
+.floating-music-btn:hover {
+  transform: scale(1.1);
+}
+
+.floating-music-btn.playing {
+  animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 15px rgba(245, 158, 11, 0.6); }
+  50% { box-shadow: 0 0 30px rgba(245, 158, 11, 0.9); }
+}
+
+.sound-waves-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.floating-music-btn.playing .wave-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid #f59e0b;
+  animation: wavePulse 1.8s infinite;
+}
+
+.floating-music-btn.playing .wave-ring:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+@keyframes wavePulse {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+
+/* Royal Toast Alert */
+.royal-toast {
+  position: fixed;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%) translateY(30px);
+  background: rgba(12, 27, 48, 0.95);
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-light);
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  z-index: 10005;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  text-align: center;
+  max-width: 90%;
+}
+
+.royal-toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero-section { min-height: 150vh; }
+  .formal-card { padding: 36px 20px 30px; }
+  .venue-name-card { padding: 26px 18px 22px; }
+  .mirror-frame-wrap { width: 270px; height: 360px; }
+  .countdown-digits-wrap { gap: 8px; }
+  .count-box { padding: 12px 4px; }
+}

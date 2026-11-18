@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 440" fill="none">
+  <defs>
+    <!-- Background Portrait Studio Gradient -->
+    <linearGradient id="studioBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a1420"/>
+      <stop offset="50%" stop-color="#461e31"/>
+      <stop offset="100%" stop-color="#190a13"/>
+    </linearGradient>
+    <radialGradient id="portraitGlow" cx="50%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#fdf4d7" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#461e31" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Skin Tones -->
+    <linearGradient id="skinGroom" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f2cfb2"/>
+      <stop offset="100%" stop-color="#dbab85"/>
+    </linearGradient>
+    <linearGradient id="skinBride" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fae3d2"/>
+      <stop offset="100%" stop-color="#e8be9b"/>
+    </linearGradient>
+    <!-- Royal Attire Gradients -->
+    <linearGradient id="royalIvory" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f8f4eb"/>
+      <stop offset="100%" stop-color="#e9decb"/>
+    </linearGradient>
+    <linearGradient id="royalBlush" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fce7ee"/>
+      <stop offset="50%" stop-color="#f4b5ca"/>
+      <stop offset="100%" stop-color="#d9779f"/>
+    </linearGradient>
+    <linearGradient id="goldEmbroidery" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8db"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Studio Background -->
+  <rect width="320" height="440" fill="url(#studioBg)"/>
+  <circle cx="160" cy="180" r="140" fill="url(#portraitGlow)"/>
+
+  <!-- ================= THE GROOM (HUSBAND) ================= -->
+  <g id="groom" transform="translate(45, 60)">
+    <!-- Sherwani (Cream & Gold Thread Work) -->
+    <path d="M40 180 L20 380 L130 380 L120 180 Z" fill="url(#royalIvory)" stroke="#d4af37" stroke-width="1.5"/>
+    <!-- Mandarin Collar -->
+    <rect x="58" y="155" width="40" height="25" rx="5" fill="url(#royalIvory)" stroke="#d4af37" stroke-width="1.5"/>
+    <!-- Front Placket Buttons -->
+    <g fill="url(#goldEmbroidery)">
+      <circle cx="78" cy="190" r="3"/>
+      <circle cx="78" cy="220" r="3"/>
+      <circle cx="78" cy="250" r="3"/>
+      <circle cx="78" cy="280" r="3"/>
+      <circle cx="78" cy="310" r="3"/>
+    </g>
+    <!-- Royal Emerald & Pearl Mala Necklace -->
+    <path d="M55 175 C55 240 100 240 100 175" stroke="#059669" stroke-width="3" fill="none"/>
+    <path d="M58 178 C58 235 97 235 97 178" stroke="#ffffff" stroke-width="1.8" fill="none" stroke-dasharray="2,3"/>
+    <circle cx="78" cy="235" r="5" fill="#047857" stroke="url(#goldEmbroidery)" stroke-width="1.5"/>
+
+    <!-- Neck & Face -->
+    <rect x="65" y="125" width="26" height="35" rx="6" fill="url(#skinGroom)"/>
+    <!-- Head -->
+    <path d="M52 80 C52 45 104 45 104 80 C104 125 52 125 52 80 Z" fill="url(#skinGroom)"/>
+    <!-- Hair (Styled, neat salt-and-pepper / distinguished silver touch) -->
+    <path d="M50 75 C48 40 85 30 106 40 C108 55 106 70 102 75 C95 48 60 52 50 75 Z" fill="#18181b"/>
+    <path d="M52 65 C55 45 80 40 100 48" stroke="#cbd5e1" stroke-width="1.2" fill="none" opacity="0.6"/>
+
+    <!-- Facial Features -->
+    <!-- Eyes -->
+    <ellipse cx="68" cy="82" rx="4" ry="2.2" fill="#27272a"/>
+    <ellipse cx="90" cy="82" rx="4" ry="2.2" fill="#27272a"/>
+    <!-- Eyebrows -->
+    <path d="M63 76 C67 73 73 74 76 76" stroke="#27272a" stroke-width="2" fill="none"/>
+    <path d="M82 76 C85 74 91 73 95 76" stroke="#27272a" stroke-width="2" fill="none"/>
+    <!-- Nose -->
+    <path d="M78 80 L76 96 L82 96" stroke="#c08960" stroke-width="1.5" fill="none"/>
+    <!-- Loving Smile -->
+    <path d="M70 106 C74 112 84 112 88 106" stroke="#92400e" stroke-width="2" fill="none"/>
+    <!-- Well-groomed Beard/Stubble -->
+    <path d="M62 95 C68 122 90 122 96 95" stroke="#27272a" stroke-width="1.5" fill="none" opacity="0.4"/>
+  </g>
+
+  <!-- ================= THE BRIDE (WIFE) ================= -->
+  <g id="bride" transform="translate(130, 80)">
+    <!-- Lehanga & Ornate Dupatta Drape (Rose Pink & Gold) -->
+    <path d="M35 170 L15 360 L140 360 L115 170 Z" fill="url(#royalBlush)" stroke="url(#goldEmbroidery)" stroke-width="1.5"/>
+
+    <!-- Gold Embroidered Dupatta / Odhni Drape -->
+    <path d="M25 180 C40 230 45 300 20 360 L50 360 C70 300 65 230 45 180 Z" fill="url(#goldEmbroidery)" opacity="0.9"/>
+    <path d="M100 130 C125 180 135 260 120 360" stroke="url(#goldEmbroidery)" stroke-width="12" fill="none" opacity="0.8"/>
+
+    <!-- Neck & Blouse -->
+    <rect x="52" y="125" width="24" height="35" rx="5" fill="url(#skinBride)"/>
+    <!-- Kundan Choker & Polki Diamond Necklace -->
+    <path d="M48 145 C48 170 80 170 80 145" stroke="url(#goldEmbroidery)" stroke-width="4" fill="none"/>
+    <g fill="#ffffff">
+      <circle cx="53" cy="154" r="2"/>
+      <circle cx="59" cy="158" r="2"/>
+      <circle cx="64" cy="160" r="2.5"/>
+      <circle cx="69" cy="158" r="2"/>
+      <circle cx="75" cy="154" r="2"/>
+    </g>
+
+    <!-- Head & Hair Updo -->
+    <ellipse cx="64" cy="65" rx="32" ry="30" fill="#18181b"/>
+    <!-- Face -->
+    <path d="M42 75 C42 45 86 45 86 75 C86 115 42 115 42 75 Z" fill="url(#skinBride)"/>
+    <!-- Elegant Hair Parting & Maang Tikka (Traditional Royal Jewel) -->
+    <path d="M42 68 C45 50 64 45 64 45 C64 45 83 50 86 68 Z" fill="#18181b"/>
+    <line x1="64" y1="45" x2="64" y2="62" stroke="url(#goldEmbroidery)" stroke-width="1.8"/>
+    <circle cx="64" cy="63" r="3.5" fill="#e11d48" stroke="url(#goldEmbroidery)" stroke-width="1"/>
+    <!-- Small Bindi -->
+    <circle cx="64" cy="72" r="2" fill="#be123c"/>
+
+    <!-- Facial Features -->
+    <!-- Eyes with Kajal -->
+    <ellipse cx="54" cy="78" rx="4.5" ry="2.2" fill="#18181b"/>
+    <ellipse cx="74" cy="78" rx="4.5" ry="2.2" fill="#18181b"/>
+    <circle cx="53" cy="77" r="1" fill="#ffffff"/>
+    <circle cx="73" cy="77" r="1" fill="#ffffff"/>
+    <!-- Eyebrows -->
+    <path d="M48 72 C52 69 58 70 61 73" stroke="#18181b" stroke-width="1.8" fill="none"/>
+    <path d="M67 73 C70 70 76 69 80 72" stroke="#18181b" stroke-width="1.8" fill="none"/>
+    <!-- Nose -->
+    <path d="M64 77 L62 90 L67 90" stroke="#c08960" stroke-width="1.2" fill="none"/>
+    <!-- Small Diamond Nose Stud (Nathni) -->
+    <circle cx="60" cy="89" r="1.5" fill="#ffffff"/>
+    <!-- Warm Smiling Lips (Rose Pink) -->
+    <path d="M56 100 C60 105 68 105 72 100" stroke="#be123c" stroke-width="2.5" fill="none"/>
+
+    <!-- Jhumka Earrings -->
+    <circle cx="41" cy="85" r="2.5" fill="url(#goldEmbroidery)"/>
+    <polygon points="38,90 44,90 41,96" fill="url(#goldEmbroidery)"/>
+    <circle cx="87" cy="85" r="2.5" fill="url(#goldEmbroidery)"/>
+    <polygon points="84,90 90,90 87,96" fill="url(#goldEmbroidery)"/>
+  </g>
+
+  <!-- Celebratory Golden Aura / Confetti Sprinkles -->
+  <g fill="#fef08a" opacity="0.7">
+    <circle cx="40" cy="120" r="1.5"/>
+    <circle cx="70" cy="40" r="2"/>
+    <circle cx="280" cy="60" r="2.5"/>
+    <circle cx="290" cy="190" r="1.8"/>
+    <circle cx="30" cy="280" r="2"/>
+    <circle cx="280" cy="310" r="1.5"/>
+  </g>
+</svg>

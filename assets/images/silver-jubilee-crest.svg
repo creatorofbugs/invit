@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" fill="none">
+  <defs>
+    <!-- Silver Gradients -->
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#e2e8f0"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="75%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="silverSheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94a3b8" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#94a3b8" stop-opacity="0.3"/>
+    </linearGradient>
+    <!-- Gold Trim Gradients -->
+    <linearGradient id="goldTrim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8db"/>
+      <stop offset="50%" stop-color="#dfb15b"/>
+      <stop offset="100%" stop-color="#9d7426"/>
+    </linearGradient>
+    <filter id="royalShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Starburst & Rays -->
+  <g opacity="0.4">
+    <circle cx="160" cy="155" r="115" stroke="url(#silverGrad)" stroke-width="0.8" stroke-dasharray="2,6"/>
+    <circle cx="160" cy="155" r="105" stroke="url(#goldTrim)" stroke-width="0.5"/>
+  </g>
+
+  <!-- Royal Laurel Wreath of 25 Years (Left Branch) -->
+  <g filter="url(#royalShadow)">
+    <g fill="url(#silverGrad)">
+      <!-- Left side leaves -->
+      <path d="M120 70 C105 75 92 90 85 110 C83 103 89 91 98 82 C107 74 116 70 120 70 Z"/>
+      <path d="M102 92 C88 100 78 116 75 136 C71 128 78 115 88 105 C96 97 101 93 102 92 Z"/>
+      <path d="M89 122 C78 132 72 150 72 170 C66 162 70 147 78 136 C84 128 88 123 89 122 Z"/>
+      <path d="M88 158 C80 170 78 188 82 208 C74 200 75 184 81 172 C85 163 87 159 88 158 Z"/>
+      <path d="M98 195 C92 208 96 226 106 242 C98 235 95 219 98 207 C100 199 101 195 98 195 Z"/>
+      <path d="M120 230 C118 242 126 256 142 268 C132 263 124 250 122 238 C121 232 120 230 120 230 Z"/>
+
+      <!-- Right side leaves (mirrored) -->
+      <path d="M200 70 C215 75 228 90 235 110 C237 103 231 91 222 82 C213 74 204 70 200 70 Z"/>
+      <path d="M218 92 C232 100 242 116 245 136 C249 128 242 115 232 105 C224 97 219 93 218 92 Z"/>
+      <path d="M231 122 C242 132 248 150 248 170 C254 162 250 147 242 136 C236 128 232 123 231 122 Z"/>
+      <path d="M232 158 C240 170 242 188 238 208 C246 200 245 184 239 172 C235 163 233 159 232 158 Z"/>
+      <path d="M222 195 C228 208 224 226 214 242 C222 235 225 219 222 207 C220 199 219 195 222 195 Z"/>
+      <path d="M200 230 C202 242 194 256 178 268 C188 263 196 250 198 238 C199 232 200 230 200 230 Z"/>
+    </g>
+
+    <!-- Silver Laurel Main Stems -->
+    <path d="M110 75 C70 120 70 200 135 260" stroke="url(#goldTrim)" stroke-width="1.8" fill="none"/>
+    <path d="M210 75 C250 120 250 200 185 260" stroke="url(#goldTrim)" stroke-width="1.8" fill="none"/>
+  </g>
+
+  <!-- Crown / Royal Crest Finial at Top -->
+  <g filter="url(#royalShadow)" fill="url(#goldTrim)">
+    <path d="M160 32 L164 45 L175 40 L169 54 L180 54 L171 65 L160 62 L149 65 L140 54 L151 54 L145 40 L156 45 Z"/>
+    <circle cx="160" cy="28" r="3.2" fill="url(#silverGrad)"/>
+    <circle cx="145" cy="38" r="2" fill="url(#silverGrad)"/>
+    <circle cx="175" cy="38" r="2" fill="url(#silverGrad)"/>
+  </g>
+
+  <!-- Central Shield / Medallion -->
+  <circle cx="160" cy="155" r="68" fill="#081c24" stroke="url(#goldTrim)" stroke-width="2.5" filter="url(#royalShadow)"/>
+  <circle cx="160" cy="155" r="63" stroke="url(#silverGrad)" stroke-width="1" stroke-dasharray="3,3"/>
+  <circle cx="160" cy="155" r="60" fill="none" stroke="url(#goldTrim)" stroke-width="0.8"/>
+
+  <!-- Iconic Number "25" in Roman/Royal Numeral -->
+  <!-- Bold 25 -->
+  <g filter="url(#royalShadow)">
+    <text x="160" y="172" font-family="'Playfair Display', 'Cinzel Decorative', 'Georgia', serif" font-size="52" font-weight="900" fill="url(#silverGrad)" text-anchor="middle" letter-spacing="-1">25</text>
+  </g>
+
+  <!-- "YEARS OF TOGETHERNESS" Arc Text -->
+  <text x="160" y="118" font-family="'Cinzel', 'Montserrat', serif" font-size="8.5" font-weight="700" fill="url(#goldTrim)" text-anchor="middle" letter-spacing="3">CELEBRATING</text>
+  <text x="160" y="195" font-family="'Cinzel', 'Montserrat', serif" font-size="8" font-weight="700" fill="url(#silverGrad)" text-anchor="middle" letter-spacing="3.5">YEARS OF LOVE</text>
+
+  <!-- Bottom Ribbon / Banner -->
+  <g filter="url(#royalShadow)">
+    <path d="M85 272 L115 264 L160 268 L205 264 L235 272 L225 285 L200 280 L160 284 L120 280 L95 285 Z" fill="#0f262e" stroke="url(#silverGrad)" stroke-width="1.2"/>
+    <text x="160" y="278" font-family="'Cinzel', serif" font-size="10.5" font-weight="800" fill="url(#silverSheen)" text-anchor="middle" letter-spacing="4">SILVER JUBILEE</text>
+  </g>
+
+  <!-- Year Badges -->
+  <text x="160" y="302" font-family="'Montserrat', sans-serif" font-size="9" font-weight="600" fill="url(#goldTrim)" text-anchor="middle" letter-spacing="5">2001 • 2026</text>
+</svg>

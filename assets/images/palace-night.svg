@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" fill="none">
+  <defs>
+    <!-- Deep Midnight Sky Gradient -->
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#050b14"/>
+      <stop offset="40%" stop-color="#0b172a"/>
+      <stop offset="80%" stop-color="#142642"/>
+      <stop offset="100%" stop-color="#243854"/>
+    </linearGradient>
+
+    <!-- Warm Golden Palace Floodlighting -->
+    <linearGradient id="palaceGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffe49e"/>
+      <stop offset="35%" stop-color="#f59e0b"/>
+      <stop offset="70%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+
+    <linearGradient id="wallSilhouette" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd27d"/>
+      <stop offset="25%" stop-color="#e08e2b"/>
+      <stop offset="60%" stop-color="#8a4b08"/>
+      <stop offset="100%" stop-color="#2a1200"/>
+    </linearGradient>
+
+    <radialGradient id="ambientPalaceHalo" cx="50%" cy="85%" r="65%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#b45309" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="lanternGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Sky Canvas -->
+  <rect width="1200" height="650" fill="url(#nightSky)"/>
+
+  <!-- Starry Constellations & Nebulae -->
+  <g fill="#ffffff">
+    <circle cx="120" cy="80" r="1.5" opacity="0.8"/>
+    <circle cx="180" cy="50" r="2.2" opacity="0.9"/>
+    <circle cx="260" cy="110" r="1.2" opacity="0.6"/>
+    <circle cx="340" cy="40" r="1.8" opacity="0.85"/>
+    <circle cx="420" cy="95" r="1" opacity="0.5"/>
+    <circle cx="510" cy="60" r="2.5" opacity="0.95"/>
+    <circle cx="610" cy="35" r="1.5" opacity="0.7"/>
+    <circle cx="700" cy="90" r="2" opacity="0.8"/>
+    <circle cx="780" cy="45" r="1.2" opacity="0.6"/>
+    <circle cx="860" cy="115" r="2.2" opacity="0.9"/>
+    <circle cx="940" cy="70" r="1.5" opacity="0.75"/>
+    <circle cx="1020" cy="35" r="2" opacity="0.85"/>
+    <circle cx="1110" cy="85" r="1.2" opacity="0.6"/>
+    <circle cx="80" cy="160" r="1" opacity="0.5"/>
+    <circle cx="210" cy="190" r="1.8" opacity="0.75"/>
+    <circle cx="390" cy="170" r="1.5" opacity="0.6"/>
+    <circle cx="570" cy="150" r="2" opacity="0.8"/>
+    <circle cx="820" cy="180" r="1.2" opacity="0.7"/>
+    <circle cx="990" cy="160" r="1.8" opacity="0.85"/>
+    <circle cx="1140" cy="190" r="1" opacity="0.5"/>
+  </g>
+
+  <!-- Distant Aravalli Hills Silhouette -->
+  <path d="M0 420 C180 380 320 405 480 390 C620 375 750 410 920 395 C1050 385 1130 400 1200 415 L1200 650 L0 650 Z" fill="#071322" opacity="0.9"/>
+
+  <!-- Warm Atmospheric Golden Glow rising from Palace -->
+  <rect y="250" width="1200" height="400" fill="url(#ambientPalaceHalo)"/>
+
+  <!-- ================= GRAND FORT & PALACE ILLUMINATED PANORAMA ================= -->
+  <!-- Back Ramparts and Watchtowers -->
+  <g fill="url(#wallSilhouette)">
+    <!-- Left Bastion & Chhatri -->
+    <path d="M40 450 L40 370 L140 370 L140 450 Z"/>
+    <path d="M60 370 C60 340 90 320 90 320 C90 320 120 340 120 370 Z" fill="url(#palaceGlow)"/>
+    <line x1="90" y1="310" x2="90" y2="320" stroke="#ffd27d" stroke-width="2"/>
+    <circle cx="90" cy="308" r="2" fill="#ffd27d"/>
+
+    <!-- Fort Battlements (Kanguras) -->
+    <path d="M140 420 L160 420 L160 410 L180 410 L180 420 L200 420 L200 410 L220 410 L220 420 L240 420 L240 410 L260 410 L260 420 L280 420 L280 410 L300 410 L300 450 L140 450 Z"/>
+
+    <!-- Right Bastion & Chhatri -->
+    <path d="M1060 450 L1060 370 L1160 370 L1160 450 Z"/>
+    <path d="M1080 370 C1080 340 1110 320 1110 320 C1110 320 1140 340 1140 370 Z" fill="url(#palaceGlow)"/>
+    <line x1="1110" y1="310" x2="1110" y2="320" stroke="#ffd27d" stroke-width="2"/>
+    <circle cx="1110" cy="308" r="2" fill="#ffd27d"/>
+  </g>
+
+  <!-- Main Heritage Palace Complex (Multi-tiered Sandstone & Marble Wings) -->
+  <!-- West Wing -->
+  <rect x="220" y="380" width="220" height="220" fill="url(#wallSilhouette)"/>
+  <!-- Central Palace Pavilion (Umaid/Rambagh Grand Cupola) -->
+  <rect x="420" y="330" width="360" height="270" fill="url(#wallSilhouette)"/>
+  <!-- East Wing -->
+  <rect x="760" y="380" width="240" height="220" fill="url(#wallSilhouette)"/>
+
+  <!-- Grand Domes and Chhatris along Roofline -->
+  <!-- Left Side Domes -->
+  <path d="M260 380 C260 330 300 300 300 300 C300 300 340 330 340 380 Z" fill="url(#palaceGlow)"/>
+  <circle cx="300" cy="295" r="3" fill="#ffe599"/>
+  <path d="M360 380 C360 340 390 320 390 320 C390 320 420 340 420 380 Z" fill="url(#palaceGlow)"/>
+
+  <!-- Central Monumental Dome -->
+  <path d="M520 330 C520 230 600 180 600 180 C600 180 680 230 680 330 Z" fill="url(#palaceGlow)"/>
+  <path d="M598 180 L600 150 L602 180 Z" fill="#ffe599"/>
+  <circle cx="600" cy="146" r="5" fill="#ffffff" filter="url(#lanternGlow)"/>
+
+  <!-- Right Side Domes -->
+  <path d="M780 380 C780 340 810 320 810 320 C810 320 840 340 840 380 Z" fill="url(#palaceGlow)"/>
+  <path d="M860 380 C860 330 900 300 900 300 C900 300 940 330 940 380 Z" fill="url(#palaceGlow)"/>
+  <circle cx="900" cy="295" r="3" fill="#ffe599"/>
+
+  <!-- Rows of Illuminated Arched Windows (Warm Gold Glint) -->
+  <g fill="#fef08a" opacity="0.95" filter="url(#lanternGlow)">
+    <!-- Upper Level Windows -->
+    <rect x="460" y="355" width="14" height="22" rx="7"/>
+    <rect x="495" y="355" width="14" height="22" rx="7"/>
+    <rect x="530" y="355" width="14" height="22" rx="7"/>
+    <rect x="565" y="355" width="14" height="22" rx="7"/>
+    <rect x="620" y="355" width="14" height="22" rx="7"/>
+    <rect x="655" y="355" width="14" height="22" rx="7"/>
+    <rect x="690" y="355" width="14" height="22" rx="7"/>
+    <rect x="725" y="355" width="14" height="22" rx="7"/>
+
+    <!-- Middle Level Windows Across Entire Facade -->
+    <rect x="250" y="415" width="12" height="18" rx="6"/>
+    <rect x="280" y="415" width="12" height="18" rx="6"/>
+    <rect x="310" y="415" width="12" height="18" rx="6"/>
+    <rect x="340" y="415" width="12" height="18" rx="6"/>
+    <rect x="370" y="415" width="12" height="18" rx="6"/>
+
+    <rect x="450" y="410" width="16" height="25" rx="8"/>
+    <rect x="485" y="410" width="16" height="25" rx="8"/>
+    <rect x="520" y="410" width="16" height="25" rx="8"/>
+    <rect x="555" y="410" width="16" height="25" rx="8"/>
+    <rect x="630" y="410" width="16" height="25" rx="8"/>
+    <rect x="665" y="410" width="16" height="25" rx="8"/>
+    <rect x="700" y="410" width="16" height="25" rx="8"/>
+    <rect x="735" y="410" width="16" height="25" rx="8"/>
+
+    <rect x="790" y="415" width="12" height="18" rx="6"/>
+    <rect x="820" y="415" width="12" height="18" rx="6"/>
+    <rect x="850" y="415" width="12" height="18" rx="6"/>
+    <rect x="880" y="415" width="12" height="18" rx="6"/>
+    <rect x="910" y="415" width="12" height="18" rx="6"/>
+    <rect x="940" y="415" width="12" height="18" rx="6"/>
+  </g>
+
+  <!-- Lower Grand Terrace & Arches (Courtyard Level) -->
+  <path d="M100 480 L1100 480 L1150 560 L50 560 Z" fill="url(#wallSilhouette)"/>
+  <!-- Grand Arches Row -->
+  <g fill="#ffe599" opacity="0.85">
+    <path d="M470 540 C470 500 500 485 530 485 C560 485 590 500 590 540 Z"/>
+    <path d="M610 540 C610 500 640 485 670 485 C700 485 730 500 730 540 Z"/>
+    <path d="M330 540 C330 505 355 495 380 495 C405 495 430 505 430 540 Z"/>
+    <path d="M770 540 C770 505 795 495 820 495 C845 495 870 505 870 540 Z"/>
+  </g>
+
+  <!-- Foreground Courtyard Water / Reflecting Lake -->
+  <rect y="560" width="1200" height="90" fill="#06121f"/>
+  <!-- Water Golden Sheen Reflections -->
+  <g opacity="0.4" filter="url(#lanternGlow)">
+    <ellipse cx="600" cy="575" rx="180" ry="8" fill="#fde68a"/>
+    <ellipse cx="380" cy="585" rx="100" ry="6" fill="#f59e0b"/>
+    <ellipse cx="820" cy="585" rx="100" ry="6" fill="#f59e0b"/>
+    <ellipse cx="600" cy="610" rx="300" ry="12" fill="#d97706"/>
+  </g>
+
+  <!-- Glowing Sky Lanterns Rising into Night Sky -->
+  <g filter="url(#lanternGlow)">
+    <!-- Small Far Lanterns -->
+    <path d="M150 260 L156 260 L158 272 L148 272 Z" fill="#f59e0b"/>
+    <circle cx="153" cy="266" r="3" fill="#fffbeb"/>
+
+    <path d="M320 220 L327 220 L329 234 L318 234 Z" fill="#f59e0b"/>
+    <circle cx="323" cy="227" r="3.5" fill="#fffbeb"/>
+
+    <path d="M480 140 L488 140 L491 155 L477 155 Z" fill="#f59e0b"/>
+    <circle cx="484" cy="147" r="4.5" fill="#ffffff"/>
+
+    <path d="M730 180 L738 180 L741 195 L727 195 Z" fill="#f59e0b"/>
+    <circle cx="734" cy="187" r="4" fill="#ffffff"/>
+
+    <path d="M880 230 L887 230 L890 244 L877 244 Z" fill="#f59e0b"/>
+    <circle cx="883" cy="237" r="3.5" fill="#fffbeb"/>
+
+    <path d="M1020 170 L1030 170 L1033 188 L1017 188 Z" fill="#f59e0b"/>
+    <circle cx="1025" cy="179" r="5" fill="#ffffff"/>
+
+    <!-- Midground Glow Lanterns -->
+    <path d="M220 120 L232 120 L235 142 L217 142 Z" fill="#f59e0b"/>
+    <circle cx="226" cy="131" r="6" fill="#ffffff"/>
+
+    <path d="M660 70 L674 70 L678 95 L656 95 Z" fill="#f59e0b"/>
+    <circle cx="667" cy="82" r="7" fill="#ffffff"/>
+
+    <path d="M810 100 L823 100 L826 124 L807 124 Z" fill="#f59e0b"/>
+    <circle cx="816" cy="112" r="6" fill="#ffffff"/>
+  </g>
+</svg>

@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" fill="none">
+  <defs>
+    <!-- Car Body Teal / Turquoise Gradients -->
+    <linearGradient id="carBodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7fc3c3"/>
+      <stop offset="25%" stop-color="#4aa4a6"/>
+      <stop offset="65%" stop-color="#2d7b80"/>
+      <stop offset="100%" stop-color="#1b5256"/>
+    </linearGradient>
+    <linearGradient id="hoodSheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2b7579"/>
+      <stop offset="30%" stop-color="#67babc"/>
+      <stop offset="50%" stop-color="#93d6d6"/>
+      <stop offset="70%" stop-color="#67babc"/>
+      <stop offset="100%" stop-color="#2b7579"/>
+    </linearGradient>
+    <!-- Chrome Gradients -->
+    <linearGradient id="chromeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="20%" stop-color="#dce5eb"/>
+      <stop offset="45%" stop-color="#98a8b6"/>
+      <stop offset="60%" stop-color="#eaf1f5"/>
+      <stop offset="85%" stop-color="#788894"/>
+      <stop offset="100%" stop-color="#adbcc7"/>
+    </linearGradient>
+    <linearGradient id="chromeH" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#adbcc7"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#adbcc7"/>
+    </linearGradient>
+    <!-- Glass Gradients -->
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cbe3e8" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#8bb7c4" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#558896" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#2a5360" stop-opacity="0.9"/>
+    </linearGradient>
+    <!-- Headlight Gradients -->
+    <radialGradient id="headlightGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#fffae6"/>
+      <stop offset="80%" stop-color="#ffd56b"/>
+      <stop offset="100%" stop-color="#b8831c"/>
+    </radialGradient>
+    <radialGradient id="amberLight" cx="45%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#fff1b0"/>
+      <stop offset="60%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </radialGradient>
+    <filter id="carShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Ground Shadow under Car -->
+  <ellipse cx="300" cy="390" rx="240" ry="18" fill="#000000" opacity="0.35" filter="blur(8px)"/>
+
+  <!-- Tires (Front Wheel Base) -->
+  <g fill="#1a1c1e">
+    <!-- Left Tire -->
+    <rect x="85" y="275" width="60" height="110" rx="16"/>
+    <path d="M85 340 L145 340" stroke="#33383d" stroke-width="2"/>
+    <!-- Right Tire -->
+    <rect x="455" y="275" width="60" height="110" rx="16"/>
+    <path d="M455 340 L515 340" stroke="#33383d" stroke-width="2"/>
+  </g>
+
+  <!-- Car Main Assembly -->
+  <g filter="url(#carShadow)">
+    <!-- Cabin Roof & Pillars -->
+    <path d="M165 140 C175 75 220 50 300 50 C380 50 425 75 435 140 Z" fill="url(#carBodyGrad)" stroke="#1a4548" stroke-width="2"/>
+
+    <!-- Windshield Chrome Frame -->
+    <path d="M172 138 C182 82 225 58 300 58 C375 58 418 82 428 138 Z" fill="url(#chromeGrad)"/>
+    <!-- Windshield Glass -->
+    <path d="M178 135 C186 86 226 64 300 64 C374 64 414 86 422 135 Z" fill="url(#glassGrad)"/>
+
+    <!-- Glass Reflections -->
+    <path d="M210 135 L260 70 L280 70 L230 135 Z" fill="#ffffff" opacity="0.25"/>
+    <path d="M330 135 L380 75 L395 78 L345 135 Z" fill="#ffffff" opacity="0.18"/>
+
+    <!-- Interior Rearview Mirror -->
+    <rect x="286" y="70" width="28" height="10" rx="3" fill="#1e293b" stroke="url(#chromeGrad)" stroke-width="1.2"/>
+
+    <!-- Side View Mirrors -->
+    <!-- Left Mirror -->
+    <path d="M145 130 C135 125 130 135 138 142 L160 144 Z" fill="url(#chromeGrad)"/>
+    <ellipse cx="140" cy="134" rx="7" ry="10" fill="url(#glassGrad)" stroke="url(#chromeGrad)" stroke-width="1.5"/>
+    <!-- Right Mirror -->
+    <path d="M455 130 C465 125 470 135 462 142 L440 144 Z" fill="url(#chromeGrad)"/>
+    <ellipse cx="460" cy="134" rx="7" ry="10" fill="url(#glassGrad)" stroke="url(#chromeGrad)" stroke-width="1.5"/>
+
+    <!-- Hood & Front Body Shell -->
+    <path d="M115 220 C110 170 140 145 180 142 L420 142 C460 145 490 170 485 220 C480 270 485 305 475 320 L125 320 C115 305 120 270 115 220 Z" fill="url(#carBodyGrad)" stroke="#1a4245" stroke-width="2"/>
+
+    <!-- Hood Center Ridge & Highlights -->
+    <path d="M185 145 C230 142 370 142 415 145 L395 240 C350 242 250 242 205 240 Z" fill="url(#hoodSheen)" opacity="0.5"/>
+    <path d="M300 142 L300 245" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Curved Side Fenders -->
+    <!-- Left Fender -->
+    <path d="M115 190 C90 200 70 230 72 280 C74 310 95 330 130 335 L145 270 C135 240 130 215 115 190 Z" fill="url(#carBodyGrad)" stroke="#163e41" stroke-width="1.5"/>
+    <path d="M88 230 C82 255 84 285 96 308" stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+    <!-- Right Fender -->
+    <path d="M485 190 C510 200 530 230 528 280 C526 310 505 330 470 335 L455 270 C465 240 470 215 485 190 Z" fill="url(#carBodyGrad)" stroke="#163e41" stroke-width="1.5"/>
+    <path d="M512 230 C518 255 516 285 504 308" stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+    <!-- Classic Tall Chrome Radiator Grille (Mercedes / Rolls Royce heritage style) -->
+    <path d="M225 155 C225 148 235 142 245 142 L355 142 C365 142 375 148 375 155 L365 315 L235 315 Z" fill="url(#chromeGrad)" stroke="#74838f" stroke-width="2"/>
+    <rect x="238" y="152" width="124" height="155" rx="6" fill="#13191c"/>
+
+    <!-- Grille Vertical Slats -->
+    <g stroke="url(#chromeH)" stroke-width="2.2" opacity="0.95">
+      <line x1="248" y1="156" x2="246" y2="304"/>
+      <line x1="258" y1="154" x2="257" y2="304"/>
+      <line x1="268" y1="153" x2="267" y2="304"/>
+      <line x1="278" y1="152" x2="278" y2="304"/>
+      <line x1="288" y1="152" x2="288" y2="304"/>
+      <line x1="300" y1="145" x2="300" y2="306" stroke-width="3" stroke="#ffffff"/>
+      <line x1="312" y1="152" x2="312" y2="304"/>
+      <line x1="322" y1="152" x2="322" y2="304"/>
+      <line x1="332" y1="153" x2="333" y2="304"/>
+      <line x1="342" y1="154" x2="343" y2="304"/>
+      <line x1="352" y1="156" x2="354" y2="304"/>
+    </g>
+
+    <!-- Grille Horizontal Accent Bars -->
+    <line x1="240" y1="200" x2="360" y2="200" stroke="url(#chromeH)" stroke-width="1.5" opacity="0.7"/>
+    <line x1="240" y1="250" x2="360" y2="250" stroke="url(#chromeH)" stroke-width="1.5" opacity="0.7"/>
+
+    <!-- Radiator Hood Ornament (Star / Flying Crest) -->
+    <g transform="translate(300, 136)">
+      <circle cx="0" cy="0" r="10" stroke="url(#chromeGrad)" stroke-width="2" fill="none"/>
+      <line x1="0" y1="-9" x2="0" y2="9" stroke="url(#chromeGrad)" stroke-width="1.8"/>
+      <line x1="-8" y1="5" x2="8" y2="-5" stroke="url(#chromeGrad)" stroke-width="1.5"/>
+      <line x1="-8" y1="-5" x2="8" y2="5" stroke="url(#chromeGrad)" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="2.5" fill="#ffffff"/>
+    </g>
+
+    <!-- Dual Vintage Round Headlamps -->
+    <!-- Left Main Headlamp -->
+    <circle cx="165" cy="225" r="38" fill="url(#chromeGrad)" stroke="#556470" stroke-width="2"/>
+    <circle cx="165" cy="225" r="32" fill="url(#headlightGlow)"/>
+    <circle cx="165" cy="225" r="31" stroke="#a47a24" stroke-width="1" fill="none" opacity="0.6"/>
+    <!-- Glass Lens Fluting Lines -->
+    <g stroke="#ffffff" stroke-width="0.8" opacity="0.65">
+      <line x1="145" y1="210" x2="145" y2="240"/>
+      <line x1="155" y1="200" x2="155" y2="250"/>
+      <line x1="165" y1="195" x2="165" y2="255"/>
+      <line x1="175" y1="200" x2="175" y2="250"/>
+      <line x1="185" y1="210" x2="185" y2="240"/>
+    </g>
+    <circle cx="156" cy="216" r="6" fill="#ffffff" opacity="0.7"/>
+
+    <!-- Right Main Headlamp -->
+    <circle cx="435" cy="225" r="38" fill="url(#chromeGrad)" stroke="#556470" stroke-width="2"/>
+    <circle cx="435" cy="225" r="32" fill="url(#headlightGlow)"/>
+    <circle cx="435" cy="225" r="31" stroke="#a47a24" stroke-width="1" fill="none" opacity="0.6"/>
+    <!-- Glass Lens Fluting Lines -->
+    <g stroke="#ffffff" stroke-width="0.8" opacity="0.65">
+      <line x1="415" y1="210" x2="415" y2="240"/>
+      <line x1="425" y1="200" x2="425" y2="250"/>
+      <line x1="435" y1="195" x2="435" y2="255"/>
+      <line x1="445" y1="200" x2="445" y2="250"/>
+      <line x1="455" y1="210" x2="455" y2="240"/>
+    </g>
+    <circle cx="426" cy="216" r="6" fill="#ffffff" opacity="0.7"/>
+
+    <!-- Lower Amber Turn Signals / Fog Lamps -->
+    <!-- Left Amber -->
+    <circle cx="140" cy="290" r="14" fill="url(#chromeGrad)"/>
+    <circle cx="140" cy="290" r="11" fill="url(#amberLight)"/>
+    <circle cx="137" cy="287" r="3" fill="#ffffff" opacity="0.6"/>
+
+    <!-- Right Amber -->
+    <circle cx="460" cy="290" r="14" fill="url(#chromeGrad)"/>
+    <circle cx="460" cy="290" r="11" fill="url(#amberLight)"/>
+    <circle cx="457" cy="287" r="3" fill="#ffffff" opacity="0.6"/>
+
+    <!-- Massive Heavy Chrome Front Bumper with Overriders -->
+    <!-- Bumper Main Bar -->
+    <path d="M70 340 C140 355 460 355 530 340 C540 338 546 348 540 356 C510 380 430 388 300 388 C170 388 90 380 60 356 C54 348 60 338 70 340 Z" fill="url(#chromeGrad)" stroke="#45545e" stroke-width="2"/>
+    <path d="M80 348 C160 364 440 364 520 348" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.8"/>
+
+    <!-- Chrome Bumper Overriders (Guards) -->
+    <!-- Left Guard -->
+    <rect x="200" y="325" width="22" height="52" rx="6" fill="url(#chromeGrad)" stroke="#43525c" stroke-width="1.5"/>
+    <path d="M206 330 L206 370" stroke="#ffffff" stroke-width="1.8" opacity="0.8"/>
+    <!-- Right Guard -->
+    <rect x="378" y="325" width="22" height="52" rx="6" fill="url(#chromeGrad)" stroke="#43525c" stroke-width="1.5"/>
+    <path d="M384 330 L384 370" stroke="#ffffff" stroke-width="1.8" opacity="0.8"/>
+
+    <!-- Vintage License Plate -->
+    <g transform="translate(250, 335)">
+      <rect x="0" y="0" width="100" height="34" rx="4" fill="#0f172a" stroke="url(#chromeGrad)" stroke-width="2"/>
+      <rect x="3" y="3" width="94" height="28" rx="2" fill="#1e293b"/>
+      <!-- Text: SILVER JUBILEE / RJ 25 -->
+      <text x="50" y="15" font-family="'Cinzel', 'Montserrat', sans-serif" font-size="7" font-weight="700" fill="#94a3b8" text-anchor="middle" letter-spacing="2">SILVER JUBILEE</text>
+      <text x="50" y="27" font-family="'Cinzel', 'Playfair Display', serif" font-size="11" font-weight="900" fill="#e2e8f0" text-anchor="middle" letter-spacing="3">SG 25 2001</text>
+    </g>
+  </g>
+</svg>

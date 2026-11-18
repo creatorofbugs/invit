@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 640" fill="none">
+  <defs>
+    <!-- Carved Cream Sandstone & Ivory Gradients -->
+    <linearGradient id="ivoryGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fffdfa"/>
+      <stop offset="35%" stop-color="#f5ede0"/>
+      <stop offset="75%" stop-color="#e8dcce"/>
+      <stop offset="100%" stop-color="#d4c3b0"/>
+    </linearGradient>
+    <linearGradient id="goldFiligree" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8db"/>
+      <stop offset="50%" stop-color="#dfb15b"/>
+      <stop offset="100%" stop-color="#a17622"/>
+    </linearGradient>
+    <filter id="carvedShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#carvedShadow)">
+    <!-- 1. TOP CROWN & ARCH (y: 30 to 230, above the inner opening) -->
+    <path d="M250 30 
+             C270 45 285 35 305 45 
+             C325 55 335 75 355 80 
+             C375 85 400 95 400 120 
+             L400 230 
+             L360 230 
+             C360 160 315 115 250 115 
+             C185 115 140 160 140 230 
+             L100 230 
+             L100 120 
+             C100 95 125 85 145 80 
+             C165 75 175 55 195 45 
+             C215 35 230 45 250 30 Z" 
+          fill="url(#ivoryGrad)" stroke="#cbb8a2" stroke-width="2.5"/>
+
+    <!-- 2. LEFT CARVED PILLAR (x: 100 to 140, y: 230 to 540) -->
+    <rect x="100" y="228" width="40" height="314" fill="url(#ivoryGrad)" stroke="#cbb8a2" stroke-width="2.5"/>
+
+    <!-- 3. RIGHT CARVED PILLAR (x: 360 to 400, y: 230 to 540) -->
+    <rect x="360" y="228" width="40" height="314" fill="url(#ivoryGrad)" stroke="#cbb8a2" stroke-width="2.5"/>
+
+    <!-- 4. BOTTOM PEDESTAL & MOLDING (x: 100 to 400, y: 540 to 605) -->
+    <path d="M100 540 
+             L400 540 
+             C400 585 375 600 350 605 
+             L150 605 
+             C125 600 100 585 100 540 Z" 
+          fill="url(#ivoryGrad)" stroke="#cbb8a2" stroke-width="2.5"/>
+
+    <!-- 5. SIDE CARVED DECORATIVE VOLUTES -->
+    <!-- Left Volutes -->
+    <path d="M100 130 C75 140 60 170 65 200 C70 225 85 240 100 245 Z" fill="url(#ivoryGrad)" stroke="#cbb8a2" stroke-width="2"/>
+    <path d="M100 440 C75 450 60 480 65 510 C70 535 85 550 100 555 Z" fill="url(#ivoryGrad)" stroke="#cbb8a2" stroke-width="2"/>
+    <!-- Right Volutes -->
+    <path d="M400 130 C425 140 440 170 435 200 C430 225 415 240 400 245 Z" fill="url(#ivoryGrad)" stroke="#cbb8a2" stroke-width="2"/>
+    <path d="M400 440 C425 450 440 480 435 510 C430 535 415 550 400 555 Z" fill="url(#ivoryGrad)" stroke="#cbb8a2" stroke-width="2"/>
+
+    <!-- 6. TOP FLORAL MOTIF EMBLEM -->
+    <g fill="url(#goldFiligree)" transform="translate(250, 60)">
+      <circle cx="0" cy="0" r="10"/>
+      <circle cx="0" cy="-18" r="6"/>
+      <circle cx="-16" cy="-8" r="6"/>
+      <circle cx="16" cy="-8" r="6"/>
+      <circle cx="-14" cy="12" r="5"/>
+      <circle cx="14" cy="12" r="5"/>
+    </g>
+
+    <!-- 7. INNER WINDOW GOLD MOLDING ARCH -->
+    <path d="M140 542 L140 230 C140 158 185 112 250 112 C315 112 360 158 360 230 L360 542 Z" fill="none" stroke="url(#goldFiligree)" stroke-width="3"/>
+
+    <!-- 8. INNER BEADED GOLD INLAY -->
+    <path d="M148 534 L148 232 C148 166 189 122 250 122 C311 122 352 166 352 232 L352 534 Z" stroke="url(#goldFiligree)" stroke-width="1.5" stroke-dasharray="3,4" fill="none"/>
+
+    <!-- 9. CARVED DENTIL DETAILS ALONG BASE -->
+    <rect x="120" y="585" width="260" height="8" rx="2" fill="url(#goldFiligree)" opacity="0.6"/>
+  </g>
+</svg>

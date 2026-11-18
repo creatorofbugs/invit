@@ -1,0 +1,351 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" fill="none">
+  <defs>
+    <!-- Palace Sandstone & Amber Warm Lighting Gradients -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f"/>
+      <stop offset="40%" stop-color="#142c4b"/>
+      <stop offset="75%" stop-color="#24416b"/>
+      <stop offset="100%" stop-color="#3c4c68"/>
+    </linearGradient>
+
+    <!-- Sandstone Wall Gradients -->
+    <linearGradient id="sandstoneWall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd599"/>
+      <stop offset="30%" stop-color="#e8a863"/>
+      <stop offset="70%" stop-color="#c67f3b"/>
+      <stop offset="100%" stop-color="#93531b"/>
+    </linearGradient>
+
+    <!-- Sandstone Highlight -->
+    <linearGradient id="sandstoneLit" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff1d0"/>
+      <stop offset="40%" stop-color="#f5c27f"/>
+      <stop offset="100%" stop-color="#d48a3e"/>
+    </linearGradient>
+
+    <!-- Warm Amber Interior Window Glow -->
+    <radialGradient id="interiorGlow" cx="50%" cy="60%" r="55%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="35%" stop-color="#fde68a"/>
+      <stop offset="70%" stop-color="#f59e0b"/>
+      <stop offset="90%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </radialGradient>
+
+    <!-- Gold Dome Gradient -->
+    <linearGradient id="goldDome" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5d9"/>
+      <stop offset="25%" stop-color="#f7c866"/>
+      <stop offset="60%" stop-color="#d9992b"/>
+      <stop offset="85%" stop-color="#b57512"/>
+      <stop offset="100%" stop-color="#704400"/>
+    </linearGradient>
+
+    <!-- Turquoise Pool Water -->
+    <linearGradient id="poolWater" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.95"/>
+      <stop offset="30%" stop-color="#06b6d4" stop-opacity="0.98"/>
+      <stop offset="70%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#0e7490"/>
+    </linearGradient>
+
+    <!-- Fountain Marble -->
+    <linearGradient id="whiteMarble" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#f1f5f9"/>
+      <stop offset="80%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="palaceShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glowFountain" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- ================= LEVEL 1: TOP CHHATRI DOME (Y: 0 to 280) ================= -->
+  <g id="top-chhatri" filter="url(#palaceShadow)">
+    <!-- Kalash & Finial -->
+    <path d="M500 20 L503 55 L497 55 Z" fill="url(#goldDome)"/>
+    <circle cx="500" cy="18" r="4.5" fill="#fff5d9"/>
+    <ellipse cx="500" cy="58" rx="8" ry="5" fill="url(#goldDome)"/>
+    <ellipse cx="500" cy="70" rx="14" ry="7" fill="url(#goldDome)"/>
+
+    <!-- Fluted Rajput Dome (Chhatri) -->
+    <path d="M500 75 C420 85 365 145 360 215 L640 215 C635 145 580 85 500 75 Z" fill="url(#goldDome)" stroke="#8c5807" stroke-width="2"/>
+
+    <!-- Dome Ribs (Fluting) -->
+    <g stroke="#ffffff" stroke-width="1.2" opacity="0.35">
+      <path d="M500 75 L500 215"/>
+      <path d="M500 75 C475 90 455 145 450 215"/>
+      <path d="M500 75 C525 90 545 145 550 215"/>
+      <path d="M500 75 C440 100 410 150 405 215"/>
+      <path d="M500 75 C560 100 590 150 595 215"/>
+    </g>
+
+    <!-- Dome Eaves / Chhajja (Curved Overhang) -->
+    <path d="M340 215 C340 215 420 226 500 226 C580 226 660 215 660 215 L670 228 C590 240 500 240 330 228 Z" fill="url(#sandstoneLit)" stroke="#783e0c" stroke-width="2"/>
+    <!-- Hanging Eave Bells / Fringe -->
+    <g fill="url(#goldDome)">
+      <circle cx="360" cy="235" r="3"/>
+      <circle cx="395" cy="238" r="3"/>
+      <circle cx="430" cy="240" r="3"/>
+      <circle cx="465" cy="241" r="3"/>
+      <circle cx="500" cy="242" r="3.5"/>
+      <circle cx="535" cy="241" r="3"/>
+      <circle cx="570" cy="240" r="3"/>
+      <circle cx="605" cy="238" r="3"/>
+      <circle cx="640" cy="235" r="3"/>
+    </g>
+
+    <!-- Chhatri Pillars & Arches -->
+    <!-- Pillars Base Platform -->
+    <rect x="355" y="325" width="290" height="15" rx="3" fill="url(#sandstoneLit)" stroke="#783e0c" stroke-width="1.5"/>
+
+    <!-- Pavilion Interior Glow -->
+    <rect x="365" y="240" width="270" height="85" fill="url(#interiorGlow)" opacity="0.85"/>
+
+    <!-- Royal Balcony Silhouette / Arch Details -->
+    <!-- Center Scalloped Arch -->
+    <path d="M420 325 L420 270 C420 250 440 240 500 240 C560 240 580 250 580 270 L580 325 Z" fill="#2d1305" opacity="0.6"/>
+    <!-- Royal Figures Silhouette Celebrating (Prince & Princess with Garland) -->
+    <g fill="#1a0b02" opacity="0.9">
+      <!-- Groom silhouette -->
+      <path d="M470 325 L472 292 C472 284 482 284 482 292 L484 325 Z"/>
+      <circle cx="477" cy="281" r="6"/>
+      <!-- Turban feather -->
+      <path d="M478 275 L481 268 L479 275 Z"/>
+      <!-- Bride silhouette with Odhni / veil -->
+      <path d="M516 325 L514 294 C514 286 526 286 526 294 L524 325 Z"/>
+      <circle cx="520" cy="283" r="5.5"/>
+      <!-- Flowing veil -->
+      <path d="M523 282 C532 288 535 305 533 325 L525 325 Z"/>
+    </g>
+
+    <!-- 4 Carved Pillars -->
+    <!-- Pillar 1 -->
+    <rect x="365" y="235" width="16" height="90" fill="url(#sandstoneLit)" stroke="#783e0c" stroke-width="1.2"/>
+    <!-- Pillar 2 -->
+    <rect x="440" y="238" width="14" height="87" fill="url(#sandstoneLit)" stroke="#783e0c" stroke-width="1.2"/>
+    <!-- Pillar 3 -->
+    <rect x="546" y="238" width="14" height="87" fill="url(#sandstoneLit)" stroke="#783e0c" stroke-width="1.2"/>
+    <!-- Pillar 4 -->
+    <rect x="619" y="235" width="16" height="90" fill="url(#sandstoneLit)" stroke="#783e0c" stroke-width="1.2"/>
+  </g>
+
+  <!-- ================= LEVEL 2: JHAROKHA BALCONY & MASONRY (Y: 340 to 520) ================= -->
+  <g id="balcony-level" filter="url(#palaceShadow)">
+    <!-- Ornate Jharokha Base Brackets (Elephant Trunk Style Carved Corbel Brackets) -->
+    <path d="M330 340 L370 410 L630 410 L670 340 Z" fill="url(#sandstoneWall)" stroke="#683107" stroke-width="2"/>
+    <g fill="url(#sandstoneLit)" stroke="#683107" stroke-width="1.2">
+      <!-- Carved brackets -->
+      <path d="M370 340 C370 380 385 410 405 410 L390 410 C370 400 360 370 360 340 Z"/>
+      <path d="M430 340 C430 380 445 410 465 410 L450 410 C430 400 420 370 420 340 Z"/>
+      <path d="M570 340 C570 380 555 410 535 410 L550 410 C570 400 580 370 580 340 Z"/>
+      <path d="M630 340 C630 380 615 410 595 410 L610 410 C630 400 640 370 640 340 Z"/>
+    </g>
+
+    <!-- Balcony Perforated Screen (Jaali Balustrade) -->
+    <rect x="330" y="340" width="340" height="42" fill="url(#sandstoneLit)" stroke="#783e0c" stroke-width="1.5"/>
+    <!-- Geometric Jaali Cutouts -->
+    <g fill="#431e05" opacity="0.65">
+      <circle cx="350" cy="360" r="5"/>
+      <circle cx="375" cy="360" r="5"/>
+      <circle cx="400" cy="360" r="5"/>
+      <circle cx="425" cy="360" r="5"/>
+      <circle cx="450" cy="360" r="5"/>
+      <circle cx="475" cy="360" r="5"/>
+      <circle cx="500" cy="360" r="6"/>
+      <circle cx="525" cy="360" r="5"/>
+      <circle cx="550" cy="360" r="5"/>
+      <circle cx="575" cy="360" r="5"/>
+      <circle cx="600" cy="360" r="5"/>
+      <circle cx="625" cy="360" r="5"/>
+      <circle cx="650" cy="360" r="5"/>
+    </g>
+
+    <!-- Side Jharokhas (Left & Right Flanking Pavilions) -->
+    <!-- Left Flanking Window -->
+    <g transform="translate(140, 310)">
+      <path d="M20 50 C20 20 50 10 70 10 C90 10 120 20 120 50 Z" fill="url(#goldDome)"/>
+      <rect x="15" y="50" width="110" height="90" fill="url(#sandstoneWall)" stroke="#783e0c" stroke-width="1.5"/>
+      <rect x="35" y="60" width="70" height="65" rx="35" fill="url(#interiorGlow)"/>
+      <line x1="70" y1="60" x2="70" y2="125" stroke="#783e0c" stroke-width="1.5"/>
+    </g>
+    <!-- Right Flanking Window -->
+    <g transform="translate(720, 310)">
+      <path d="M20 50 C20 20 50 10 70 10 C90 10 120 20 120 50 Z" fill="url(#goldDome)"/>
+      <rect x="15" y="50" width="110" height="90" fill="url(#sandstoneWall)" stroke="#783e0c" stroke-width="1.5"/>
+      <rect x="35" y="60" width="70" height="65" rx="35" fill="url(#interiorGlow)"/>
+      <line x1="70" y1="60" x2="70" y2="125" stroke="#783e0c" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- ================= LEVEL 3: GRAND PALACE FACADE & ARCHES (Y: 420 to 820) ================= -->
+  <g id="main-facade" filter="url(#palaceShadow)">
+    <!-- Palace Sandstone Main Body Wall -->
+    <rect x="50" y="420" width="900" height="380" fill="url(#sandstoneWall)" stroke="#5c2c06" stroke-width="2.5"/>
+
+    <!-- Decorative Cornice Moulding Band -->
+    <rect x="35" y="420" width="930" height="20" fill="url(#sandstoneLit)" stroke="#783e0c" stroke-width="1.5"/>
+    <g fill="#783e0c" opacity="0.6">
+      <!-- Dentil Carvings across band -->
+      <rect x="70" y="425" width="8" height="10"/>
+      <rect x="110" y="425" width="8" height="10"/>
+      <rect x="150" y="425" width="8" height="10"/>
+      <rect x="190" y="425" width="8" height="10"/>
+      <rect x="230" y="425" width="8" height="10"/>
+      <rect x="270" y="425" width="8" height="10"/>
+      <rect x="310" y="425" width="8" height="10"/>
+      <rect x="350" y="425" width="8" height="10"/>
+      <rect x="390" y="425" width="8" height="10"/>
+      <rect x="430" y="425" width="8" height="10"/>
+      <rect x="470" y="425" width="8" height="10"/>
+      <rect x="510" y="425" width="8" height="10"/>
+      <rect x="550" y="425" width="8" height="10"/>
+      <rect x="590" y="425" width="8" height="10"/>
+      <rect x="630" y="425" width="8" height="10"/>
+      <rect x="670" y="425" width="8" height="10"/>
+      <rect x="710" y="425" width="8" height="10"/>
+      <rect x="750" y="425" width="8" height="10"/>
+      <rect x="790" y="425" width="8" height="10"/>
+      <rect x="830" y="425" width="8" height="10"/>
+      <rect x="870" y="425" width="8" height="10"/>
+      <rect x="910" y="425" width="8" height="10"/>
+    </g>
+
+    <!-- THREE GRAND SCALLOPED ARCHWAYS (Glowing Arches) -->
+    <!-- Center Grand Archway -->
+    <g id="center-grand-arch">
+      <!-- Outer Decorative Arch Surround -->
+      <path d="M370 780 L370 540 C370 480 430 450 500 450 C570 450 630 480 630 540 L630 780 Z" fill="url(#sandstoneLit)" stroke="#683107" stroke-width="2"/>
+
+      <!-- Interior Illuminated Portal -->
+      <path d="M395 780 L395 560 C395 500 450 480 500 480 C550 480 605 500 605 560 L605 780 Z" fill="url(#interiorGlow)"/>
+
+      <!-- Intricate Scallops (Cusps of Mughal/Rajput Arch) -->
+      <path d="M400 590 C405 565 425 550 440 550 C455 530 480 515 500 515 C520 515 545 530 560 550 C575 550 595 565 600 590" stroke="#783e0c" stroke-width="3" fill="none"/>
+
+      <!-- Hanging Ornate Chandelier / Brass Lantern inside arch -->
+      <line x1="500" y1="480" x2="500" y2="540" stroke="#8c5807" stroke-width="2"/>
+      <path d="M485 540 L515 540 L508 575 L492 575 Z" fill="url(#goldDome)" stroke="#ffe599" stroke-width="1.5"/>
+      <circle cx="500" cy="558" r="8" fill="#ffffff" filter="url(#glowFountain)"/>
+    </g>
+
+    <!-- Left Archway -->
+    <g id="left-arch">
+      <path d="M120 780 L120 560 C120 510 170 480 230 480 C290 480 340 510 340 560 L340 780 Z" fill="url(#sandstoneLit)" stroke="#683107" stroke-width="2"/>
+      <path d="M140 780 L140 575 C140 525 185 505 230 505 C275 505 320 525 320 575 L320 780 Z" fill="url(#interiorGlow)"/>
+      <line x1="230" y1="505" x2="230" y2="550" stroke="#8c5807" stroke-width="1.5"/>
+      <circle cx="230" cy="560" r="6" fill="#ffe599" filter="url(#glowFountain)"/>
+    </g>
+
+    <!-- Right Archway -->
+    <g id="right-arch">
+      <path d="M660 780 L660 560 C660 510 710 480 770 480 C830 480 880 510 880 560 L880 780 Z" fill="url(#sandstoneLit)" stroke="#683107" stroke-width="2"/>
+      <path d="M680 780 L680 575 C680 525 725 505 770 505 C815 505 860 525 860 575 L860 780 Z" fill="url(#interiorGlow)"/>
+      <line x1="770" y1="505" x2="770" y2="550" stroke="#8c5807" stroke-width="1.5"/>
+      <circle cx="770" cy="560" r="6" fill="#ffe599" filter="url(#glowFountain)"/>
+    </g>
+  </g>
+
+  <!-- ================= LEVEL 4: COURTYARD, STEPWELL & FOUNTAIN (Y: 800 to 1200) ================= -->
+  <g id="courtyard-pool">
+    <!-- Terrace Sandstone Paving Platform -->
+    <path d="M0 800 L1000 800 L950 860 L50 860 Z" fill="url(#sandstoneLit)" stroke="#783e0c" stroke-width="1.5"/>
+
+    <!-- Stepwell / Pool Stone Rim -->
+    <!-- Tier 1 Stone Step -->
+    <polygon points="40,860 960,860 920,890 80,890" fill="#a86227" stroke="#5c2e07" stroke-width="1.5"/>
+    <!-- Tier 2 Stone Step -->
+    <polygon points="80,890 920,890 880,920 120,920" fill="#884a1a" stroke="#482405" stroke-width="1.5"/>
+    <!-- Pool Coping Lip -->
+    <polygon points="120,920 880,920 850,940 150,940" fill="#6d3912"/>
+
+    <!-- Turquoise Reflecting Pool Water (Perspective Trapezoid) -->
+    <polygon points="150,940 850,940 920,1200 80,1200" fill="url(#poolWater)"/>
+
+    <!-- Palace Reflections on Water Surface -->
+    <g opacity="0.35">
+      <!-- Reflected center arch warm glow -->
+      <ellipse cx="500" cy="980" rx="140" ry="25" fill="#fef08a" filter="blur(6px)"/>
+      <!-- Water ripple waves -->
+      <ellipse cx="500" cy="970" rx="90" ry="12" fill="none" stroke="#e0f2fe" stroke-width="1.2"/>
+      <ellipse cx="500" cy="1010" rx="160" ry="18" fill="none" stroke="#e0f2fe" stroke-width="1"/>
+      <ellipse cx="500" cy="1060" rx="240" ry="22" fill="none" stroke="#bae6fd" stroke-width="1.2"/>
+      <ellipse cx="500" cy="1120" rx="320" ry="28" fill="none" stroke="#7dd3fc" stroke-width="1.5"/>
+    </g>
+
+    <!-- Floating Lotus Flowers & Rose Petals on Water -->
+    <g id="lotus-petals">
+      <!-- Petal 1 -->
+      <ellipse cx="280" cy="990" rx="14" ry="7" fill="#f43f5e" transform="rotate(-15 280 990)"/>
+      <circle cx="280" cy="990" r="3" fill="#fef08a"/>
+      <!-- Petal 2 -->
+      <ellipse cx="720" cy="1020" rx="16" ry="8" fill="#fb7185" transform="rotate(20 720 1020)"/>
+      <!-- Petal 3 -->
+      <ellipse cx="340" cy="1100" rx="20" ry="9" fill="#f43f5e" transform="rotate(35 340 1100)"/>
+      <!-- Petal 4 -->
+      <ellipse cx="680" cy="1130" rx="22" ry="10" fill="#fda4af" transform="rotate(-25 680 1130)"/>
+      <!-- Petal 5 -->
+      <ellipse cx="440" cy="1160" rx="18" ry="8" fill="#f43f5e"/>
+    </g>
+
+    <!-- GRAND WHITE MARBLE LOTUS FOUNTAIN IN CENTER -->
+    <g id="marble-fountain" filter="url(#palaceShadow)">
+      <!-- Tier 1: Fountain Base Plinth in Water -->
+      <ellipse cx="500" cy="1030" rx="110" ry="22" fill="url(#whiteMarble)" stroke="#64748b" stroke-width="2"/>
+      <ellipse cx="500" cy="1026" rx="98" ry="18" fill="#e2e8f0"/>
+
+      <!-- Water in Lower Basin -->
+      <ellipse cx="500" cy="1024" rx="90" ry="15" fill="#38bdf8" opacity="0.85"/>
+
+      <!-- Fountain Central Stem / Pedestal -->
+      <path d="M485 1025 L488 950 L512 950 L515 1025 Z" fill="url(#whiteMarble)" stroke="#64748b" stroke-width="1.5"/>
+
+      <!-- Tier 2: Upper Lotus Petal Basin -->
+      <ellipse cx="500" cy="950" rx="60" ry="14" fill="url(#whiteMarble)" stroke="#64748b" stroke-width="1.8"/>
+      <!-- Carved Lotus Petal Rim -->
+      <g fill="#f8fafc" stroke="#94a3b8" stroke-width="1">
+        <path d="M450 950 C455 940 470 940 475 950 Z"/>
+        <path d="M475 950 C480 938 495 938 500 950 Z"/>
+        <path d="M500 950 C505 938 520 938 525 950 Z"/>
+        <path d="M525 950 C530 940 545 940 550 950 Z"/>
+      </g>
+
+      <!-- Water in Upper Basin -->
+      <ellipse cx="500" cy="948" rx="50" ry="10" fill="#38bdf8" opacity="0.9"/>
+
+      <!-- Center Spout & Finial -->
+      <ellipse cx="500" cy="938" rx="12" ry="5" fill="url(#whiteMarble)"/>
+      <path d="M496 938 L500 920 L504 938 Z" fill="url(#whiteMarble)"/>
+
+      <!-- WATER JETS & SPRAY (Glowing Frosted Shimmer) -->
+      <g stroke="#ffffff" stroke-width="1.8" opacity="0.85" filter="url(#glowFountain)">
+        <!-- Vertical Central Jet -->
+        <path d="M500 920 C500 870 488 840 470 870" fill="none"/>
+        <path d="M500 920 C500 860 500 830 500 860" fill="none"/>
+        <path d="M500 920 C500 870 512 840 530 870" fill="none"/>
+
+        <!-- Cascading Water Overflows -->
+        <path d="M445 950 C440 980 450 1020 460 1025" fill="none" stroke-width="1.2"/>
+        <path d="M555 950 C560 980 550 1020 540 1025" fill="none" stroke-width="1.2"/>
+      </g>
+
+      <!-- Spray Droplets -->
+      <g fill="#ffffff" opacity="0.9">
+        <circle cx="475" cy="855" r="2"/>
+        <circle cx="490" cy="840" r="2.5"/>
+        <circle cx="500" cy="830" r="3"/>
+        <circle cx="510" cy="840" r="2.5"/>
+        <circle cx="525" cy="855" r="2"/>
+        <circle cx="460" cy="890" r="1.5"/>
+        <circle cx="540" cy="890" r="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
